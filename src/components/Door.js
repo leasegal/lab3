@@ -27,8 +27,8 @@ import '../handlers/font-handler.js';
   }
 } */
 
-
-const Door = ()=>  {
+//החלק הטוב עושה ירוק רק לשם ניסוי על הפרויקט של ריאקט
+/* const Door = ()=>  {
   const[stateDoor,setStateDoor]=useState({isOpen:true})
   const[nameGroup,changeNameGroup]=useState('mintaka')
 
@@ -52,3 +52,13 @@ const Door = ()=>  {
 
 
 export default Door;
+ */
+const Icon =(props)=>{
+  return(
+      <div>
+          <div className="icon"><FontAwesomeIcon icon={['fas','door-open']} /></div>
+          <div>{props.title}</div>
+      </div>
+  )
+}
+export default Icon
