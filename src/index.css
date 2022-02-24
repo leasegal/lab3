@@ -75,11 +75,10 @@ code {
 .flex .icon{
   height:80px;
   width: 80px;
-  border: 1px solid hsl(0, 1%, 62%);
+  border: 1px solid hsl(0, 9%, 90%);
   border-radius: 50%;
   margin: auto;
   font-size: 25px;
   padding: 20px 0;
   text-align: center;
-
 }

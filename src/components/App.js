@@ -6,17 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 let arr =[
   {
-    "title":"היסטוריה",
-    "icon":"['fas','door-open']"
+    "title":"הוספת תוכן",
+    "icon":['fas','user-friends'] 
   },
   {
     "title":"נשמר",
-    "icon":"['fas','door-open']"
+    "icon":['fas','star']
 
   },
   {
-    "title":"הוספת תוכן",
-    "icon":"['fas','door-open']"
+    "title":"היסטוריה",
+    "icon":['fas','history'] 
 
   }
 
@@ -25,7 +25,7 @@ let arr =[
 function App() {
   return(<div className='flex'>
  {arr.map((el,i)=>
- <Icon key={i}  icon={<FontAwesomeIcon icon={el.icon}/>} title={el.title}/>)}
+ <Icon key={i} icon={el.icon} title={el.title}/>)}
     
   </div>);
 }

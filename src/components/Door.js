@@ -54,11 +54,13 @@ import '../handlers/font-handler.js';
 export default Door;
  */
 const Icon =(props)=>{
-  return(
-      <div>
-          <div className="icon">{props.icon}</div>
-          <div>{props.title}</div>
-      </div>
-  )
+    return(
+        <div>
+            
+            <div className="icon"><span><FontAwesomeIcon icon={props.icon}/></span></div>
+            <div>{props.title}</div>
+        </div>
+        
+    )
 }
 export default Icon
