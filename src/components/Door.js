@@ -56,7 +56,7 @@ export default Door;
 const Icon =(props)=>{
   return(
       <div>
-          <div className="icon"><FontAwesomeIcon icon={['fas','door-open']} /></div>
+          <div className="icon">{props.icon}</div>
           <div>{props.title}</div>
       </div>
   )

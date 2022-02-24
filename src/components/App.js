@@ -1,5 +1,6 @@
 import Icon from "./Door";
 import '../handlers/font-handler.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -24,7 +25,7 @@ let arr =[
 function App() {
   return(<div className='flex'>
  {arr.map((el,i)=>
- <Icon key={i}  icon={el.icon} title={el.title}/>)}
+ <Icon key={i}  icon={<FontAwesomeIcon icon={el.icon}/>} title={el.title}/>)}
     
   </div>);
 }
